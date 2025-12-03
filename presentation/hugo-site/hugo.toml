@@ -1,4 +1,8 @@
 baseURL = "https://alexpham02.github.io/Project2_Submission_AlexPham/"
 languageCode = "en-us"
-title = "Library API – Projects 1 & 2"
+title = "Library API Portfolio – Projects 1 & 2"
 theme = "ananke"
+
+[outputs]
+home = ["HTML", "RSS"]
+

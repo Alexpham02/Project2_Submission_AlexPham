@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Deployment Instructions</title>
+</head>
+<body>
+  <h1>Deployment Instructions</h1>
+
+  <h2>Local Development</h2>
+  <p>From <code>code/library-api</code> run:</p>
+  <pre><code>./run.sh</code></pre>
+  <p>This script:</p>
+  <ol>
+    <li>Creates <code>.env</code> and generates the app key (if needed)</li>
+    <li>Installs Composer dependencies</li>
+    <li>Runs migrations and seeds the database</li>
+    <li>Starts the Laravel API on port 8080</li>
+  </ol>
+
+  <h2>Docker Deployment</h2>
+  <p>From <code>code/library-api</code> run:</p>
+  <pre><code>./setup.sh</code></pre>
+  <p>This will:</p>
+  <ol>
+    <li>Build the Docker image</li>
+    <li>Start the Laravel app and MySQL containers</li>
+    <li>Run migrations and seed automatically</li>
+  </ol>
+
+  <h2>Test Login</h2>
+  <pre><code>curl -X POST http://127.0.0.1:8080/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"phama2@mymail.nku.edu","password":"Library123!"}'</code></pre>
+
+  <p><a href="../">← Back to home</a></p>
+</body>
+</html>
+

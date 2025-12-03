@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>API Endpoints</title>
+</head>
+<body>
+  <h1>API Endpoints</h1>
+
+  <h2>Authentication</h2>
+  <ul>
+    <li><code>POST /api/auth/login</code> – body: <code>{"email":"...","password":"..."}</code>, returns <code>access_token</code> and <code>refresh_token</code></li>
+    <li><code>POST /api/auth/refresh</code> – uses refresh token in <code>Authorization: Bearer</code> header to get a new access token</li>
+  </ul>
+
+  <h2>Books (require access token)</h2>
+  <ul>
+    <li><code>GET /api/books</code> – list all books</li>
+    <li><code>POST /api/books</code> – create a book</li>
+    <li><code>GET /api/books/{id}</code> – get a book</li>
+    <li><code>PUT /api/books/{id}</code> – update a book</li>
+    <li><code>DELETE /api/books/{id}</code> – delete a book</li>
+    <li><code>GET /api/books/search?title=...</code> – search by title or author</li>
+    <li><code>GET /api/books/borrowed</code> – list books borrowed by the current user</li>
+  </ul>
+
+  <p><a href="../">← Back to home</a></p>
+</body>
+</html>
+

@@ -2,7 +2,14 @@
 title: "Library API Portfolio"
 ---
 
-Welcome! This site documents my ASE 230 Project 1 and Project 2 work.
+# Library API Projects 1 & 2
 
-- **Project 1** – PHP, MySQL, JWT, NGINX
-- **Project 2** – Laravel, Eloquent, Sanctum, Docker, Hugo, GitHub Pages
+Welcome!  
+This documentation explains:
+
+- Project 1 – PHP Library API  
+- Project 2 – Laravel Library API  
+- API endpoints  
+- Deployment instructions  
+- Docker usage  
+- How authentication works  
